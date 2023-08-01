@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./usuario.component.css']
 })
 export class UsuarioComponent {
-@Input() persona:any;
+@Input('persona') aliaspersona:any;
 }
