@@ -11,4 +11,9 @@ persona={
   edad: 20,
   notas: [10,2,5]
 }
+
+getMessage(e:any){
+  alert(e);
+}
+
 }
