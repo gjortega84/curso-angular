@@ -6,9 +6,11 @@ import { CSP_NONCE, Component } from '@angular/core';
   styleUrls: ['./clase12.component.css']
 })
 export class Clase12Component {
-  onKeyup()
+  onKeyup(pnombre:any)
   {
-    console.log("enter presionado");
+    // console.log("enter presionado");
+    // console.log("escrisbiste: " + e.target.value)
+    console.log("escrisbiste: " + pnombre)
   }
 
 }
