@@ -11,6 +11,7 @@ import { BotonComponent } from './boton/boton.component';
 import { Clase11Component } from './clase11/clase11.component';
 import { Clase12Component } from './clase12/clase12.component';
 import { Clase15Component } from './clase15/clase15.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Clase15Component } from './clase15/clase15.component';
     BotonComponent,
     Clase11Component,
     Clase12Component,
-    Clase15Component
+    Clase15Component,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
