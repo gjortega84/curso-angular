@@ -6,5 +6,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./usuario.component.css']
 })
 export class UsuarioComponent {
-@Input() persona:any;
+@Input('persona') aliaspersona:any;
+@Output() enviar = new EventEmitter<String>();
+mensaje = "soy son"
+
+ejecutarEvento(){
+  this.enviar.emit(this.mensaje)
+}
 }

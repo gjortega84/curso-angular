@@ -12,8 +12,10 @@ persona={
   notas: [10,2,5]
 }
 
-getMessage(e:any){
-  alert(e);
-}
+dato=""
 
+getMensaje(e:any){
+  alert(e)
+  this.dato=e
+}
 }

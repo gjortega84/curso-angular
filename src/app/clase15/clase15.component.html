@@ -4,4 +4,6 @@
 <br/>
 <p>{{persona.nombre}}</p> -->
 <!-- <h1>Usuario</h1> -->
-<app-usuario [persona]="persona" enviar= "getMessage($event)"></app-usuario>
+<app-usuario [persona]="persona" (enviar)="getMensaje($event)"></app-usuario>
+
+  <h1>{{dato}}</h1>
