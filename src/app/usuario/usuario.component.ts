@@ -7,10 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class UsuarioComponent {
 @Input('persona') aliaspersona:any;
-@Output() enviar = new EventEmitter<String>();
+@Output('enviar') envialo_papu = new EventEmitter<String>();
 mensaje = "soy son"
 
 ejecutarEvento(){
-  this.enviar.emit(this.mensaje)
+  this.envialo_papu.emit(this.mensaje)
 }
 }
