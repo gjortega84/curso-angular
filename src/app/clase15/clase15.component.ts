@@ -11,4 +11,11 @@ persona={
   edad: 20,
   notas: [10,2,5]
 }
+
+dato=""
+
+getMensaje(e:any){
+  alert(e)
+  this.dato=e
+}
 }

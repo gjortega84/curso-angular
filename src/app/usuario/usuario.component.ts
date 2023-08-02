@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-usuario',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class UsuarioComponent {
 @Input('persona') aliaspersona:any;
+@Output() enviar = new EventEmitter<String>();
+mensaje = "soy son"
+
+ejecutarEvento(){
+  this.enviar.emit(this.mensaje)
+}
 }
