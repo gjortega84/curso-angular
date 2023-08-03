@@ -16,6 +16,6 @@ export class AppComponent {
 
 
   eliminar(){
-    this.cursos = ['java', 'c++', 'python', '.net']
+    this.cursos = []
   }
 }
