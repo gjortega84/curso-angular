@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   mensaje="curso de angular"
   nombre = "Gonza"
-
+  isValid=false
   getName(){
     return this.nombre
   }
