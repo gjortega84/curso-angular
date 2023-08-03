@@ -7,12 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   mensaje="curso de angular"
-  nombre = "Gonza"
+  // nombre = "Gonza"
   isValid=false
   cursos =['java','c++','javascript', 'Python']
-  getName(){
-    return this.nombre
-  }
+
+  personas = [
+    { id: 1, nombre:'Gonza', edad:39},
+    { id: 1, nombre:'Puru', edad:39},
+    { id: 1, nombre:'Rosa', edad:60},
+    { id: 1, nombre:'Chari', edad:65}
+  ]
+  // getName(){
+  //   return this.nombre
+  // }
 
 
   eliminar(){

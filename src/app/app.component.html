@@ -20,7 +20,7 @@
 
 <div>hola</div>
 <div hidden>me juis</div> -->
-
+<!-- 
 <div [hidden]="cursos.length==0"> tengo cursos</div>
 <div [hidden]="cursos.length>0">no tengo cursos</div> 
 
@@ -28,4 +28,20 @@
 <ng-template #hayCursos>si hay</ng-template>
 <ng-template #noHayCursos>no hay</ng-template>
 
-<div *ngIf="cursos.length>0 then hayCursos else noHayCursos"></div>
+<div *ngIf="cursos.length>0 then hayCursos else noHayCursos"></div> -->
+
+<!-- <ul>
+  <li> {{cursos[0]}}  </li>
+  <li> {{cursos[1]}}  </li>
+  <li> {{cursos[2]}}  </li>
+  <li> {{cursos[3]}}  </li>
+  
+</ul>
+
+<ul>
+  <li *ngFor="let cursi of cursos"> {{cursi}}</li>
+</ul> -->
+<ol>
+  <li *ngFor="let persona of personas">
+    {{persona.nombre}}  {{persona.edad}} años </li>
+</ol>
