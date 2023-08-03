@@ -11,6 +11,7 @@ import { BotonComponent } from './boton/boton.component';
 import { Clase11Component } from './clase11/clase11.component';
 import { Clase12Component } from './clase12/clase12.component';
 import { Clase15Component } from './clase15/clase15.component';
+import { Clase21Component } from './clase21/clase21.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
     BotonComponent,
     Clase11Component,
     Clase12Component,
+    Clase21Component,
     Clase15Component,
     UsuarioComponent
   ],
