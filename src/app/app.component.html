@@ -10,6 +10,18 @@
 <app-clase12></app-clase12> -->
 <!-- <app-clase15></app-clase15> -->
 <!-- <app-clase21></app-clase21> -->
-<div *ngIf="isValid"> reee locoo</div>
+<!-- <div *ngIf="isValid"> reee locoo</div>
 <div *ngIf="!isValid"> reee locoo a la inversa</div>
-<div *ngIf="2+2==4">Bien calculado capooo!</div>
+<div *ngIf="2+2==4">Bien calculado capooo!</div> -->
+<!-- <div *ngIf="cursos.length">Hay curselios</div> -->
+<!-- <div *ngIf="cursos.length then hayCursos else noHayCursos"></div>
+<hr>
+<button (click)="eliminar()">chiau</button>
+<ng-template #hayCursos>si hay</ng-template>
+<ng-template #noHayCursos>no hay</ng-template> -->
+<!-- 
+<div>hola</div>
+<div hidden>me juis</div> -->
+
+<div [hidden]="cursos.length==0"> tengo cursos</div>
+<div [hidden]="cursos.length>0">no tengo cursos</div> 
