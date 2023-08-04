@@ -1,26 +1,26 @@
-<!-- <h1>Holus</h1>
+ <!-- <h1>Holus</h1>
 <h2>
   {{'Mi nombre es ' + getName()}}
-</h2>  -->
-<!-- <cursos></cursos> -->
-<!-- <app-imagen></app-imagen> -->
-<!-- <cursos2><cursos2> -->
-<!-- <app-boton></app-boton> -->
-<!-- <app-clase11></app-clase11>
-<app-clase12></app-clase12> -->
-<!-- <app-clase15></app-clase15> -->
-<!-- <app-clase21></app-clase21> -->
-<!-- <div *ngIf="isValid"> reee locoo</div>
+</h2>  
+<cursos></cursos>
+<app-imagen></app-imagen> 
+<cursos2><cursos2> 
+<app-boton></app-boton> 
+<app-clase11></app-clase11>
+<app-clase12></app-clase12>
+<app-clase15></app-clase15> 
+<app-clase21></app-clase21> 
+<div *ngIf="isValid"> reee locoo</div>
 <div *ngIf="!isValid"> reee locoo a la inversa</div>
-<div *ngIf="2+2==4">Bien calculado capooo!</div> -->
-<!-- <div *ngIf="cursos.length">Hay curselios</div> -->
-<!-- <div *ngIf="cursos.length then hayCursos else noHayCursos"></div>
+<div *ngIf="2+2==4">Bien calculado capooo!</div>
+<div *ngIf="cursos.length">Hay curselios</div>
+ <div *ngIf="cursos.length then hayCursos else noHayCursos"></div>
 <hr>
 <button (click)="eliminar()">chiau</button>
 
 <div>hola</div>
-<div hidden>me juis</div> -->
-<!-- 
+<div hidden>me juis</div> 
+ 
 <div [hidden]="cursos.length==0"> tengo cursos</div>
 <div [hidden]="cursos.length>0">no tengo cursos</div> 
 
@@ -28,9 +28,9 @@
 <ng-template #hayCursos>si hay</ng-template>
 <ng-template #noHayCursos>no hay</ng-template>
 
-<div *ngIf="cursos.length>0 then hayCursos else noHayCursos"></div> -->
+<div *ngIf="cursos.length>0 then hayCursos else noHayCursos"></div>
 
-<!-- <ul>
+<ul>
   <li> {{cursos[0]}}  </li>
   <li> {{cursos[1]}}  </li>
   <li> {{cursos[2]}}  </li>
@@ -40,7 +40,7 @@
 
 <ul>
   <li *ngFor="let cursi of cursos"> {{cursi}}</li>
-</ul> -->
+</ul>
 
 <button (click)="onAgregar()" class="btn btn-primary">Agregar</button>
 
@@ -52,10 +52,14 @@
   
   <input *ngIf="isValid && personas.indexOf(persona)===index" type="text" [(ngModel)]="persona.nombre">
   
-  <!-- <p>{{isValid && personas.indexOf(persona)===index}}</p> -->
+  <p>{{isValid && personas.indexOf(persona)===index}}</p> 
   
   </li>
 </ol>
-<!-- <p>{{index}}</p> -->
+ <p>{{index}}</p>  -->
 
-
+ <ul *ngFor="let persona of personas" [ngSwitch]="persona.hobbie">
+  <li *ngSwitchCase="'sing'" class="text-primary">{{persona.nombre}}  {{persona.edad}} años </li>
+  <li *ngSwitchCase="'dance'" class="text-danger">{{persona.nombre}}  {{persona.edad}} años </li>
+  <li *ngSwitchCase="'run'" class="text-success">{{persona.nombre}}  {{persona.edad}} años </li>
+ </ul>

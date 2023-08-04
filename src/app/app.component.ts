@@ -12,10 +12,10 @@ export class AppComponent {
   cursos =['java','c++','javascript', 'Python']
 
   personas = [
-    { id: 1, nombre:'Gonza', edad:39},
-    { id: 2, nombre:'Puru', edad:39},
-    { id: 3, nombre:'Rosa', edad:60},
-    { id: 4, nombre:'Chari', edad:65}
+    { id: 1, nombre:'Gonza', edad:39, hobbie:'sing'},
+    { id: 2, nombre:'Puru', edad:39, hobbie:'dance'},
+    { id: 3, nombre:'Rosa', edad:60, hobbie:'run'},
+    { id: 4, nombre:'Chari', edad:65, hobbie:'ride bykes'}
   ]
   // getName(){
   //   return this.nombre
@@ -27,7 +27,7 @@ index=0
   }
 
   onAgregar(){
-    this.personas.push({id: this.personas.length, nombre:'Nombre' + this.personas.length, edad: 20+this.personas.length})
+    // this.personas.push({id: this.personas.length, nombre:'Nombre' + this.personas.length, edad: 20+this.personas.length})
   }
 
   onBorrar(persona:any){
