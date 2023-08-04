@@ -41,7 +41,21 @@
 <ul>
   <li *ngFor="let cursi of cursos"> {{cursi}}</li>
 </ul> -->
+
+<button (click)="onAgregar()" class="btn btn-primary">Agregar</button>
+
 <ol>
   <li *ngFor="let persona of personas">
-    {{persona.nombre}}  {{persona.edad}} años </li>
+   {{persona.nombre}}  {{persona.edad}} años 
+  <button class="btn btn-danger" (click)="onBorrar(persona)">borrar</button>
+  <button class="btn btn-warning" (click)="onEdit(persona)">Edit</button>
+  
+  <input *ngIf="isValid && personas.indexOf(persona)===index" type="text" [(ngModel)]="persona.nombre">
+  
+  <!-- <p>{{isValid && personas.indexOf(persona)===index}}</p> -->
+  
+  </li>
 </ol>
+<!-- <p>{{index}}</p> -->
+
+
