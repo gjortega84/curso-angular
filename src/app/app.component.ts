@@ -40,4 +40,14 @@ index=0
     this.index=this.personas.indexOf(persona)
     this.isValid =this.isValid? false:true
   }
+
+  getColor(hobbie:any){
+    switch(hobbie){
+      case  "sing":
+       return 'red'
+        break;
+        default:
+      return'black'
+    }
+  }
 }

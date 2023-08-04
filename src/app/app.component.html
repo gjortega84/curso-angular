@@ -56,10 +56,29 @@
   
   </li>
 </ol>
- <p>{{index}}</p>  -->
+ <p>{{index}}</p> 
 
  <ul *ngFor="let persona of personas" [ngSwitch]="persona.hobbie">
   <li *ngSwitchCase="'sing'" class="text-primary">{{persona.nombre}}  {{persona.edad}} años </li>
   <li *ngSwitchCase="'dance'" class="text-danger">{{persona.nombre}}  {{persona.edad}} años </li>
   <li *ngSwitchCase="'run'" class="text-success">{{persona.nombre}}  {{persona.edad}} años </li>
- </ul>
+ </ul> -->
+
+ <div [style.backgroundColor] = " isValid ? 'green' : 'red'"
+      [style.color]="isValid?'green':'white'">
+      hola
+</div>
+
+<hr>
+<div [ngStyle]="{'backgroundColor': 'yellow', 'color': 'orange', 'font-size.px':'40'}">
+chiau
+</div>
+<hr>
+<div [ngStyle]="{'backgroundColor': isValid?'orange':'white'}">
+  chiau
+</div>
+<hr>
+<ul *ngFor="let persona of personas">
+  <li [ngStyle]="{'color': getColor(persona.hobbie)}">{{persona.nombre}}</li>
+  
+</ul>
