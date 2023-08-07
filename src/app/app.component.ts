@@ -1,3 +1,4 @@
+import { CambiarColorDirective } from './cambiar-color.directive';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,6 +10,7 @@ export class AppComponent {
   mensaje="curso de angulara"
   // nombre = "Gonza"
   isValid=false
+  color=""
   cursos =['java','c++','javascript', 'Python']
 
   personas = [
