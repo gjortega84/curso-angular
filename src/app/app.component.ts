@@ -66,4 +66,6 @@ index=0
       return'black'
     }
   }
+
+  texto ="lkñfdlñfdlkñsgfdglkgdñlgdñdglkdñlfñglkd ñlkgñdñglkdñlgk ñdgkñfkgñlsdlkkg ñdfk gñdk ñgk dñf gñkdfñgkkorpoñlkrerñlkrñtlkwe"
 }
