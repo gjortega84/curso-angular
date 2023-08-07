@@ -92,7 +92,17 @@ chiau
 
 <div [appCambiarColor]="color">holas</div> -->
 
-
+<!-- 
 <div *ngIf="persona.trabajo">
 {{persona.trabajo?.tel}}
+</div> -->
+
+<div class="container">
+  <div>{{curso.titulo|uppercase}}</div>
+  <div>{{curso.num_est|number}}</div>
+  <div>{{curso.rating|number:'.1-1'}}</div>
+  <div>{{curso.precio|currency}}</div>
+  <div>{{curso.precio|currency:'AUD'}}</div>
+  <div>{{curso.precio|currency:'CAD'}}</div>
+  <div>{{curso.fecha_lan|date:"shortDate"}}</div>
 </div>

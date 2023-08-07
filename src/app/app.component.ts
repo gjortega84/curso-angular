@@ -20,14 +20,22 @@ export class AppComponent {
     { id: 4, nombre:'Chari', edad:65, hobbie:'ride bykes'}
 
   ]
-  persona = {
-    nombre:'juan',
-    apellido: 'roble',
-    trabajo:undefined
-  }
+  // persona = {
+  //   nombre:'juan',
+  //   apellido: 'roble',
+  //   trabajo:undefined
+  // }
   // getName(){
   //   return this.nombre
   // }
+
+  curso={
+    titulo:"Angular horrible",
+    num_est: 23554,
+    rating: 4.567,
+    precio: 50,
+    fecha_lan: new Date(2022,9,5)
+  }
 
 index=0
   eliminar(){
