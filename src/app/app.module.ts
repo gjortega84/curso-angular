@@ -13,6 +13,7 @@ import { Clase12Component } from './clase12/clase12.component';
 import { Clase15Component } from './clase15/clase15.component';
 import { Clase21Component } from './clase21/clase21.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { CambiarColorDirective } from './cambiar-color.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
     Clase12Component,
     Clase21Component,
     Clase15Component,
-    UsuarioComponent
+    UsuarioComponent,
+    CambiarColorDirective
   ],
   imports: [
     BrowserModule,

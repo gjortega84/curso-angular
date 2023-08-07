@@ -64,7 +64,7 @@
   <li *ngSwitchCase="'run'" class="text-success">{{persona.nombre}}  {{persona.edad}} años </li>
  </ul> -->
 
- <div [style.backgroundColor] = " isValid ? 'green' : 'red'"
+ <!-- <div [style.backgroundColor] = " isValid ? 'green' : 'red'"
       [style.color]="isValid?'green':'white'">
       hola
 </div>
@@ -81,4 +81,6 @@ chiau
 <ul *ngFor="let persona of personas">
   <li [ngStyle]="{'color': getColor(persona.hobbie)}">{{persona.nombre}}</li>
   
-</ul>
+</ul> -->
+
+<div appCambiarColor>holas</div>
