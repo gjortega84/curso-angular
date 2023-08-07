@@ -83,11 +83,16 @@ chiau
   
 </ul> -->
 
-<div>
+<!-- <div>
   <input type="radio" name="colores" (click)="color='green'">Verde
   <input type="radio" name="colores" (click)="color='blue'">Azul
   <input type="radio" name="colores" (click)="color='red'">Rogelio
 </div>
 
 
-<div [appCambiarColor]="color">holas</div>
+<div [appCambiarColor]="color">holas</div> -->
+
+
+<div *ngIf="persona.trabajo">
+{{persona.trabajo?.tel}}
+</div>

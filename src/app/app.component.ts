@@ -18,7 +18,13 @@ export class AppComponent {
     { id: 2, nombre:'Puru', edad:39, hobbie:'dance'},
     { id: 3, nombre:'Rosa', edad:60, hobbie:'run'},
     { id: 4, nombre:'Chari', edad:65, hobbie:'ride bykes'}
+
   ]
+  persona = {
+    nombre:'juan',
+    apellido: 'roble',
+    trabajo:undefined
+  }
   // getName(){
   //   return this.nombre
   // }
