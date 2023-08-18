@@ -1,5 +1,6 @@
 import { CambiarColorDirective } from './cambiar-color.directive';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ServPostService } from './serv-post.service';
 
 @Component({
   selector: 'app-root',
@@ -68,4 +69,11 @@ index=0
   }
 
   texto ="lkñfdlñfdlkñsgfdglkgdñlgdñdglkdñlfñglkd ñlkgñdñglkdñlgk ñdgkñfkgñlsdlkkg ñdfk gñdk ñgk dñf gñkdfñgkkorpoñlkrerñlkrñtlkwe"
+constructor(private postservice:ServPostService){}
+listaPost : any = [];
+ ngOnInit(){
+  this.postservice.getpost().subscribe(response=>{
+    this.listaPost=response;
+  })
+ }
 }

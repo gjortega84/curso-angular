@@ -6,16 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./clase15.component.css']
 })
 export class Clase15Component {
-persona={
-  nombre: "Gonzalo",
-  edad: 20,
-  notas: [10,2,5]
-}
+// persona={
+//   nombre: "Gonzalo",
+//   edad: 20,
+//   notas: [10,2,5]
+// }
 
-dato=""
+// dato=""
 
-getMensaje(e:any){
-  alert(e)
-  this.dato=e
-}
+// getMensaje(e:any){
+//   alert(e)
+//   this.dato=e
+// }
 }

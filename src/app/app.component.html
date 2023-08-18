@@ -97,7 +97,7 @@ chiau
 {{persona.trabajo?.tel}}
 </div> -->
 
-<div class="container">
+<!-- <div class="container">
   <div>{{curso.titulo|uppercase}}</div>
   <div>{{curso.num_est|number}}</div>
   <div>{{curso.rating|number:'.1-1'}}</div>
@@ -107,4 +107,10 @@ chiau
   <div>{{curso.fecha_lan|date:"shortDate"}}</div>
 </div>
 
-<div>{{texto|resumir:5}}</div>
+<div>{{texto|resumir:5}}</div> -->
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let post of listaPost">
+    {{post.title}}
+  </li>
+</ul>

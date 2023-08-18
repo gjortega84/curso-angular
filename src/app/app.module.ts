@@ -16,6 +16,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { CambiarColorDirective } from './cambiar-color.directive';
 import { ResumirPipe } from './resumir.pipe';
 import { NuevoPipe } from './nuevo.pipe';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,13 +32,15 @@ import { NuevoPipe } from './nuevo.pipe';
     UsuarioComponent,
     CambiarColorDirective,
     ResumirPipe,
-    NuevoPipe
+    NuevoPipe,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
